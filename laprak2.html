@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEMROGRAMAN WEB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ADD8E6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #F5FFFA;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            cursor: pointer;
+            color: #191970;
+            margin-top: 20px;
+        }
+
+        .content {
+            line-height: 1.6;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .content ul {
+            margin-left: 20px;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+        body.messy {
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            background-color: #ffcccc;
+            color: #000;
+        }
+
+        body.messy .container {
+            background: #ffff99;
+            box-shadow: none;
+            padding: 30px 10px;
+            border: 3px dashed red;
+        }
+
+        body.messy h1 {
+            font-size: 36px;
+            color: purple;
+            text-align: left;
+        }
+
+        body.messy h3 {
+            font-size: 20px;
+            color: #ff4500;
+            text-decoration: underline;
+        }
+
+        body.messy .content {
+            font-size: 18px;
+            color: green;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-left: 5px solid blue;
+        }
+
+        body.messy .content ul {
+            color: black;
+            background: #ffffcc;
+            font-size: 16px;
+            padding: 10px;
+            border: 2px dotted orange;
+        }
+
+        body.messy button {
+            background: #ff69b4;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 50%;
+        }
+
+        body.messy button:hover {
+            background: #ff1493;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>LAPORAN TEORI</h1>
+        <h2> NAMA: ISTY DANIA HUSEN | NIM: 202331106</h2>
+        <button id="toggle-mode">Mode Berantakan</button>
+
+        <h3 id="summary-section">RINGKASAN</h3>
+        <div class="content" id="summary-content">
+            <p>
+                <strong>HTML (HyperText Markup Language)</strong> digunakan untuk membangun struktur dan konten dasar dari sebuah halaman web. 
+                Dimana HTML ini menandai suatu struktur. Elemen utama dari HTML berupa:
+                <ul>
+                    <li>Heading atau (&lt;h1&gt; sampai &lt;h6&gt;) fungsinya untuk menampilkan judul</li>
+                    <li>Paragraf atau (&lt;p&gt;) fungsinya menampilkan teks</li>
+                    <li>Gambar atau (&lt;img&gt;) fungsinya untuk menyisipkan sebuah gambar</li>
+                    <li>Tautan atau (&lt;a&gt;) fungsinya untuk menambahkan hyperlink</li>
+                </ul>
+                Selain itu terdapat dokumen HTML yang memiliki struktur yang terdiri dari deklarasi doctype, tag &lt;html&gt;, &lt;head&gt;, &lt;title&gt;, dan &lt;body&gt;, yang menyusun konten utama halaman. Kemudian ada banyak framework CSS, seperti Bootstrap dan Tailwind CSS, yang menyediakan komponen dan gaya siap pakai untuk mempercepat pengembangan.
+            </p>
+            <p>
+                <strong>CSS (Cascading Style Sheets)</strong> adalah bahasa stylesheet yang digunakan untuk memperindah dan mengatur tata letak halaman web. 
+                Selain itu CSS ini dapat digunakan juga untuk mendesain atau mempercantik tampilan halaman web dengan fitur utama seperti:
+                <ul>
+                    <li>Warna: color, background-color</li>
+                    <li>Font: font-family, font-size</li>
+                    <li>Tata Letak: margin, padding, border</li>
+                </ul>
+            </p>
+            <p>
+                <strong>JavaScript</strong> menyediakan action kemudian user bisa lebih interaktif terhadap website atau aplikasi yang dibuat, 
+                dan memungkinkan menganimasikan konten. Pada JavaScript ini memiliki pustaka yang dinamakan jQuery, 
+                yang dirancang untuk memungkinkan pengembang untuk menulis kode yang lebih sedikit dan lebih mudah dibaca untuk melakukan tugas-tugas dalam pengembangan web.
+            </p>
+        </div>
+
+        <h3 id="why-section">I. Mengapa menggunakan HTML, CSS, maupun JavaScript dalam pemrograman web?</h3>
+        <div class="content" id="why-content">
+            <p>
+                Dikarenakan pada 3 komponen ini sangat penting dalam pengembangan sebuah web. 
+                HTML untuk memberikan struktur, CSS memberikan desain, dan JavaScript memberikan interaktivitasnya.
+            </p>
+        </div>
+
+        <h3 id="integration-section">II. Bagaimana HTML, CSS, dan JavaScript dapat diintegrasikan dalam pemrograman web?</h3>
+        <div class="content" id="integration-content">
+            <p>
+                Dimana HTML sebagai suatu struktur dalam membangun kerangka dasar halaman web dengan elemen seperti judul, paragraf, dan tombol. 
+                Kemudian untuk CSS sebagai desain, CSS ini mengatur tampilan halaman, memberikan gaya pada elemen HTML seperti warna dan ukuran font, 
+                sehingga halaman terlihat menarik. 
+                Untuk JavaScript menambahkan interaktivitas, kemudian memungkinkan pengguna berinteraksi dengan elemen halaman, seperti mengklik tombol untuk mengubah teks. 
+                Ketiga komponen ini saling terhubung, dengan kombinasi ini, halaman web menjadi fungsional, menarik, dan interaktif.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggleModeButton = document.getElementById("toggle-mode");
+
+            // Fungsi toggle konten
+            function toggleContent(sectionId, contentId) {
+                const section = document.getElementById(sectionId);
+                const content = document.getElementById(contentId);
+
+                section.addEventListener("click", () => {
+                    const isVisible = content.style.display !== "none";
+
+                    if (confirm(`Apakah Anda ingin ${isVisible ? "menyembunyikan" : "menampilkan"} konten ini?`)) {
+                        content.style.display = isVisible ? "none" : "block";
+                    }
+                });
+            }
+
+            let isMessy = false;
+            toggleModeButton.addEventListener("click", () => {
+                document.body.classList.toggle("messy");
+                isMessy = !isMessy;
+                toggleModeButton.textContent = isMessy ? "Mode Rapi" : "Mode Berantakan";
+            });
+
+            toggleContent("summary-section", "summary-content");
+            toggleContent("why-section", "why-content");
+            toggleContent("integration-section", "integration-content");
+        });
+    </script>
+</body>
+</html>
+  
